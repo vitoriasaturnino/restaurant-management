@@ -28,6 +28,7 @@
         password: ''
       }
     },
+
     methods:{
       async singUp() {
         let result = await axios.post("http://localhost:3000/users", {
@@ -42,6 +43,14 @@
           localStorage.setItem("user-info", JSON.stringify(result.data));
           this.$router.push({ name: "Home"});
         }
+      }
+    },
+
+    mounted() {
+      let user = localStorage.getItem("user-info");
+
+      if (user) {
+        this.$router.push({ name: 'Home' });
       }
     }
   })

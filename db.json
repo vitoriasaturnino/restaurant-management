@@ -29,6 +29,18 @@
       "email": "carlos@email.com",
       "password": "carlos123",
       "id": 5
+    },
+    {
+      "name": "pedro",
+      "email": "pedro@email.com",
+      "password": "pedro123",
+      "id": 6
+    },
+    {
+      "name": "josé",
+      "email": "jose@email.com",
+      "password": "jose123",
+      "id": 7
     }
   ]
 }
