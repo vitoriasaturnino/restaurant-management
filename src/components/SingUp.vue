@@ -4,21 +4,46 @@
 
   <div class="register-form">
     <label for="email">Name</label>
-    <input type="text" placeholder="Enter your name">
+    <input type="text" v-model="name" placeholder="Enter your name">
 
     <label for="email">E-mail</label>
-    <input type="email" placeholder="Enter your e-mail">
+    <input type="email" v-model="email" placeholder="Enter your e-mail">
 
     <label for="email">Password</label>
-    <input type="password" placeholder="Enter you password">
+    <input type="password" v-model="password" placeholder="Enter you password">
 
-    <button>Sing Up</button>
+    <button v-on:click="singUp" >Sing Up</button>
   </div>
 </template>
 
 <script>
+  import axios from 'axios';
+
   export default ({
-    name: 'SingUp'
+    name: 'SingUp',
+    data() {
+      return {
+        name: '',
+        email: '',
+        password: ''
+      }
+    },
+    methods:{
+      async singUp() {
+        let result = await axios.post("http://localhost:3000/users", {
+          name: this.name,
+          email: this.email,
+          password: this.password
+        });
+
+        console.warn(result);
+
+        if (result.status == 201) {
+          alert('sing-up done!');
+          localStorage.setItem("user-info", JSON.stringify(result.data));
+        }
+      }
+    }
   })
 </script>
 
