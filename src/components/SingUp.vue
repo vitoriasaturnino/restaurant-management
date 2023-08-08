@@ -39,8 +39,8 @@
         console.warn(result);
 
         if (result.status == 201) {
-          alert('sing-up done!');
           localStorage.setItem("user-info", JSON.stringify(result.data));
+          this.$router.push({ name: "Home"});
         }
       }
     }

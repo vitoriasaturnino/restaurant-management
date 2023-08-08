@@ -1,25 +1,20 @@
 <template>
-  <SingUp />
+  <router-view />
 </template>
 
 <script>
-import SingUp from './components/SingUp.vue'
-
-export default {
-  name: 'App',
-  components: {
-    SingUp
+  export default {
+    name: 'App'
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
