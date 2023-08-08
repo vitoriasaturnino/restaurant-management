@@ -1,0 +1,36 @@
+<template>
+  <div class="navBar">
+    <a href="#">Home</a>
+    <a href="#">Add Restaurant</a>
+    <a href="#">Update Restaurant</a>
+    <a href="#">Log Out</a>
+  </div>
+</template>
+
+<script>
+  export default ({
+    name: 'HeaderBar'
+  });
+</script>
+
+<style>
+  .navBar {
+    background: #494848;
+    overflow: hidden;
+  }
+
+  .navBar a {
+    float: left;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+
+  .navBar a:hover {
+    background-color: #ddd;
+    color: #ab6715;
+  }
+</style>
