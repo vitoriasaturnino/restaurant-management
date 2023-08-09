@@ -57,12 +57,6 @@
   ],
   "restaurants": [
     {
-      "id": 1,
-      "name": "Subway",
-      "contact": "12 12345678",
-      "address": "Praça da Bandeira"
-    },
-    {
       "name": "Burguer King",
       "contact": "13 12345678",
       "address": "Praça da Bandeira - 89",
@@ -73,12 +67,6 @@
       "contact": "49398228",
       "address": "rua do kfc",
       "id": 3
-    },
-    {
-      "name": "kfc",
-      "contact": "29383",
-      "address": "rua do kfc",
-      "id": 4
     },
     {
       "name": "starbucks",
