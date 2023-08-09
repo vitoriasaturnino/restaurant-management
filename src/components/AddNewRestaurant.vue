@@ -1,13 +1,13 @@
 <template>
   <HeaderBar />
-  <h1>Hello {{ name }}, Welcome on Home Page!</h1>
+  <h1>Hello {{ name }}, Welcome on Add New Restaurant Page!</h1>
 </template>
 
 <script>
   import HeaderBar from "./HeaderBar.vue";
 
   export default ({
-    name: "HomePage",
+    name: "AddNewRestaurant",
 
     components: {
       HeaderBar
