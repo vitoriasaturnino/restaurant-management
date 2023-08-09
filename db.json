@@ -54,5 +54,19 @@
       "password": "jaosuper",
       "id": 9
     }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Subway",
+      "contact": "12 12345678",
+      "address": "Praça da Bandeira"
+    },
+    {
+      "name": "Burguer King",
+      "contact": "13 12345678",
+      "address": "Praça da Bandeira - 89",
+      "id": 2
+    }
   ]
 }
