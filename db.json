@@ -67,6 +67,24 @@
       "contact": "13 12345678",
       "address": "Praça da Bandeira - 89",
       "id": 2
+    },
+    {
+      "name": "kfc",
+      "contact": "49398228",
+      "address": "rua do kfc",
+      "id": 3
+    },
+    {
+      "name": "kfc",
+      "contact": "29383",
+      "address": "rua do kfc",
+      "id": 4
+    },
+    {
+      "name": "starbucks",
+      "contact": "9338888",
+      "address": "rua 43",
+      "id": 5
     }
   ]
 }
