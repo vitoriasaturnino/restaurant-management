@@ -3,13 +3,20 @@
     <a href="#">Home</a>
     <a href="#">Add Restaurant</a>
     <a href="#">Update Restaurant</a>
-    <a href="#">Log Out</a>
+    <a href="#" v-on:click="logout">Log Out</a>
   </div>
 </template>
 
 <script>
   export default ({
-    name: 'HeaderBar'
+    name: 'HeaderBar',
+
+    methods: {
+      logout() {
+        localStorage.clear();
+        this.$router.push({ name: 'LoginPage' })
+      }
+    },
   });
 </script>
 

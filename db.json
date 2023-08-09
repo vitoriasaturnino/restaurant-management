@@ -41,6 +41,12 @@
       "email": "jose@email.com",
       "password": "jose123",
       "id": 7
+    },
+    {
+      "name": "joana",
+      "email": "joana@email.com",
+      "password": "joana123",
+      "id": 8
     }
   ]
 }
